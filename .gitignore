@@ -2,3 +2,5 @@
 /.vscode/
 /coupon_qr/
 /results/
+*.zip
+**/.DS_Store

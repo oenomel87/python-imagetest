@@ -8,7 +8,7 @@ def main():
         img = Image.open('./coupon_qr/' + file_name)
         img = img.convert('RGB')
         draw = ImageDraw.Draw(img)
-        draw.text(xy=(1, 1), text=file_name, fill=(0,0,0), font=font)
+        draw.text(xy=(1, 1), text=file_name[:-4], fill=(0,0,0), font=font)
         img.save('./results/' + file_name)
 
 main()
